@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     question: "Czy projekt zawiera SEO?",
-    answer: "Tak – optymalizacja SEO jest standardową częścią każdego projektu.",
+    answer: "Optymalizacja SEO jest dostępna po odpowiednich ustaleniach.",
   },
 ];
 

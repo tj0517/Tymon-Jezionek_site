@@ -9,7 +9,6 @@ export default function Kontakt() {
   ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form submitted:", form);
@@ -24,10 +23,16 @@ export default function Kontakt() {
 
 
 
-        <div
+      <div
           id="playfair"
-          className="w-full text-center text-white text-4xl md:text-7xl font-black mb-[100px]">
+          className="w-full text-center text-white text-4xl md:text-7xl font-black mb-[50px]">
           NAPISZ DO NAS
+        </div>
+        <div
+          id="poppins"
+          className="w-[90%] text-center text-white text-2xl md:text-2xl font-normal mb-[100px]">
+          SKONTAKTUJ SIĘ Z NAMI ABY OTRZYMAĆ WYCENĘ STRONY I ROZPOCZĄĆ WSPÓŁPRACĘ
+
         </div>
 
         <form onSubmit={handleSubmit} className="w-[80%] space-y-6">

@@ -20,14 +20,18 @@ export default function Kontakt() {
 
   return (
     <div id="kontakt" className="w-full bg-gray-800 py-[75px] px-6">
-      <div className="w-full md:w-[60%] lg:w-[40%] mx-auto items-center">
+      <div className="w-full max-w-3xl mx-auto px-4 flex flex-col items-center">
+
+
+
         <div
           id="playfair"
           className="w-full text-center text-white text-4xl md:text-7xl font-black mb-[100px]">
           NAPISZ DO NAS
         </div>
 
-        <form onSubmit={handleSubmit} className="max-w-xl space-y-6">
+        <form onSubmit={handleSubmit} className="w-[80%] space-y-6">
+
           {submitted && (
             <div className="text-green-400 font-medium">
               Dziękujemy za wiadomość. Skontaktujemy się wkrótce.

@@ -5,6 +5,8 @@ import FAQ from "./components/faq";
 import Portfolio from "./components/portfolio";
 import Zalety from "./components/zalety";
 import Kontakt from "./components/kontakt";
+import Proces from "./components/proces";
+import Menu from "./components/menu";
 import { useState } from 'react';
 
 export default function Home() {
@@ -41,8 +43,9 @@ export default function Home() {
   </div>
 </div>
 
-<Zalety></Zalety>
+<Menu></Menu>
 <Portfolio></Portfolio>
+<Proces></Proces>
 <FAQ></FAQ>
 <Kontakt></Kontakt>
     </div>

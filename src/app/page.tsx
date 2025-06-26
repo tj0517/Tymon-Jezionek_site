@@ -3,11 +3,23 @@
 import Image from "next/image";
 import FAQ from "./components/faq";
 import Portfolio from "./components/portfolio";
-import Zalety from "./components/zalety";
 import Kontakt from "./components/kontakt";
 import Proces from "./components/proces";
-import Menu from "./components/menu";
-import { useState } from 'react';
+
+
+const menuItems = [
+  { label: "Portfolio", targetId: "portfolio" },
+  { label: "Proces", targetId: "proces" },
+  { label: "FAQ", targetId: "faq" },
+  { label: "Kontakt", targetId: "kontakt" }
+];
+
+const scrollToSection = (id: string) => {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
 export default function Home() {
   return (
@@ -23,7 +35,7 @@ export default function Home() {
   {/* tekst na obrazie */}
   <div
     id="playfair"
-    className="absolute  w-full text-center top-[100px] md:top-[175px] font-black text-white px-4"
+    className="absolute  w-full text-center top-[150px] md:top-[175px] font-black text-white px-4"
   >
     <h1 className="text-5xl sm:text-5xl md:text-[100px] leading-tight">
       TYMON<br />JEZIONEK
@@ -43,11 +55,31 @@ export default function Home() {
   </div>
 </div>
 
-<Menu></Menu>
-<Portfolio></Portfolio>
-<Proces></Proces>
-<FAQ></FAQ>
-<Kontakt></Kontakt>
+<div id="poppins" className="justify-around flex w-full md:justify-end md:pr-20 pt-7 text-white space-x-10 absolute top-0 font-light text-2xl">
+  {menuItems.map(({ label, targetId }, i) => (
+    <div
+      key={i}
+      className="hover:underline cursor-pointer"
+      onClick={() => scrollToSection(targetId)}
+    >
+      {label}
+    </div>
+  ))}
+</div>
+
+    <div id="portfolio">
+  <Portfolio />
+</div>
+<div id="proces">
+  <Proces />
+</div>
+<div id="faq">
+  <FAQ />
+</div>
+<div id="kontakt">
+  <Kontakt />
+</div>
+
     </div>
   );
 }

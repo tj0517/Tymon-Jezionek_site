@@ -30,7 +30,7 @@ export default function Kontakt() {
         </div>
         <div
           id="poppins"
-          className="w-[90%] text-center text-white text-2xl md:text-2xl font-normal mb-[100px]">
+          className="w-[90%] text-center text-white mb-[60px] text-2xl md:text-2xl font-normal md:mb-[100px]">
           SKONTAKTUJ SIĘ Z NAMI ABY OTRZYMAĆ WYCENĘ STRONY I ROZPOCZĄĆ WSPÓŁPRACĘ
 
         </div>

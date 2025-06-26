@@ -5,23 +5,29 @@ import FAQ from "./components/faq";
 import Portfolio from "./components/portfolio";
 import Kontakt from "./components/kontakt";
 import Proces from "./components/proces";
+import { useState } from "react";
 
 
 const menuItems = [
   { label: "Portfolio", targetId: "portfolio" },
   { label: "Proces", targetId: "proces" },
   { label: "FAQ", targetId: "faq" },
-  { label: "Kontakt", targetId: "kontakt" }
+  { label: "Kontakt", targetId: "kontakt" },
 ];
 
-const scrollToSection = (id: string) => {
-  const el = document.getElementById(id);
-  if (el) {
-    el.scrollIntoView({ behavior: "smooth" });
-  }
-};
 
 export default function Home() {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      setIsOpen(false); // zamyka menu po kliknięciu
+    }
+  };
+
   return (
     <div className="overflow-x-hidden">
       {/* Sekcja główna z tłem */}
@@ -55,17 +61,46 @@ export default function Home() {
   </div>
 </div>
 
-<div id="poppins" className="justify-around ml-[5%] w-[90%] text-lg flex md:ml-0 md:w-full md:justify-end md:pr-20 pt-7 text-white space-x-10 absolute top-0 font-light md:text-2xl">
-  {menuItems.map(({ label, targetId }, i) => (
-    <div
-      key={i}
-      className="hover:underline cursor-pointer"
-      onClick={() => scrollToSection(targetId)}
-    >
-      {label}
-    </div>
-  ))}
-</div>
+     {/* Mobilny hamburger */}
+     <div className="md:hidden fixed top-4 right-4 z-50">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="text-white text-3xl focus:outline-none"
+        >
+          ☰
+        </button>
+      </div>
+
+      {/* Menu desktopowe */}
+      <div
+        id="poppins"
+        className="hidden md:flex md:ml-0 md:w-full md:justify-end md:pr-20 pt-7 text-white space-x-10 absolute top-0 font-light md:text-2xl"
+      >
+        {menuItems.map(({ label, targetId }, i) => (
+          <div
+            key={i}
+            className="hover:underline cursor-pointer"
+            onClick={() => scrollToSection(targetId)}
+          >
+            {label}
+          </div>
+        ))}
+      </div>
+
+      {/* Menu mobilne (dropdown) */}
+      {isOpen && (
+        <div className="fixed top-0 left-0 w-full h-[25vh] bg-gray-800  bg-opacity-95 p-6 z-40 flex flex-col space-y-4 text-white text-xl font-light py-[50px]">
+          {menuItems.map(({ label, targetId }, i) => (
+            <div
+              key={i}
+              className="hover:underline cursor-pointer text-center"
+              onClick={() => scrollToSection(targetId)}
+            >
+              {label}
+            </div>
+          ))}
+        </div>
+      )}
 
     <div id="portfolio">
   <Portfolio />

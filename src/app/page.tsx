@@ -55,7 +55,7 @@ export default function Home() {
   </div>
 </div>
 
-<div id="poppins" className="justify-around text-lg flex w-full md:justify-end md:pr-20 pt-7 text-white space-x-10 absolute top-0 font-light md:text-2xl">
+<div id="poppins" className="justify-around  w-[90%] text-lg flex md:w-full md:justify-end md:pr-20 pt-7 text-white space-x-10 absolute top-0 font-light md:text-2xl">
   {menuItems.map(({ label, targetId }, i) => (
     <div
       key={i}

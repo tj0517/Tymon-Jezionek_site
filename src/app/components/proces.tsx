@@ -29,8 +29,8 @@ const Opisy = [
   export default function Proces() {
       return(
 
-<div className="bg-gray-800 w-full py-[125px] flex flex-col">
-<div id="playfair" className="w-full text-center text-white text-4xl md:text-7xl font-black mb-[100px]">
+<div className="bg-gray-800 w-full py-[75px] md:py-[125px] flex flex-col">
+<div id="playfair" className="w-full text-center text-white text-4xl mb-[50px] md:text-7xl font-black md:mb-[100px]">
         PROCES
       </div>
       <div className="w-[95%] ml-[2.5%] px-4 flex flex-col items-center">
@@ -66,8 +66,8 @@ const Opisy = [
   <div className="w-[95%] ml-[2.5%] flex justify-between text-center text-white">
     {Opisy.map(({ tytul, opis }, i) => (
       <div key={i} className="max-w-[20%]">
-        <div id="playfair" className="font-bold text-lg md:text-3xl ">{tytul}</div>
-        <div id="poppins" className=" font-light mt-[20px] text-[12px] md:text-[18px] text-gray-400" >{opis}</div>
+        <div id="playfair" className=" text-[10px] font-bold sm:text-lg md:text-3xl ">{tytul}</div>
+        <div id="poppins" className=" font-light mt-[20px] text-[8px] sm:text-[12px] md:text-[18px] text-gray-400" >{opis}</div>
       </div>
     ))}
   </div>

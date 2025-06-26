@@ -24,7 +24,7 @@ const opisyStron = [
 export default function Portfolio() {
   return (
     <div id="playfair" className="bg-gray-600 w-full pt-[100px] pb-[100px]">
-      <div className="w-full text-center text-white text-4xl md:text-7xl font-black mb-[100px]">
+      <div className="w-full text-center text-white text-4xl mb-[50px] md:text-7xl font-black md:mb-[100px]">
         PORTFOLIO
       </div>
 

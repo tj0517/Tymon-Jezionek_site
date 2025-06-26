@@ -67,7 +67,7 @@ const Opisy = [
     {Opisy.map(({ tytul, opis }, i) => (
       <div key={i} className="max-w-[20%]">
         <div id="playfair" className=" text-[10px] font-bold sm:text-lg md:text-3xl ">{tytul}</div>
-        <div id="poppins" className=" font-light mt-[20px] text-[8px] sm:text-[12px] md:text-[18px] text-gray-400" >{opis}</div>
+        <div id="poppins" className=" font-light mt-[10px]  text-[8px] sm:text-[12px] sm:mt-[15px] md:text-[18px] text-gray-400 md:mt-[20px]" >{opis}</div>
       </div>
     ))}
   </div>

@@ -25,7 +25,7 @@ export default function Kontakt() {
 
       <div
           id="playfair"
-          className="w-full text-center text-white text-4xl md:text-7xl font-black mb-[50px]">
+          className="w-full text-center text-white text-5xl md:text-7xl font-black mb-[50px]">
           NAPISZ DO NAS
         </div>
         <div

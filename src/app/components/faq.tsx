@@ -28,7 +28,7 @@ export default function FAQ() {
 
   return (
     <div className="w-full py-20 bg-gray-700 text-white">
-      <div id="playfair" className="w-full text-center text-white text-4xl mb-[50px] md:text-7xl font-black md:mb-[100px]">
+      <div id="playfair" className="w-full text-center text-white text-5xl mb-[50px] md:text-7xl font-black md:mb-[100px]">
         FAQ
       </div>
 

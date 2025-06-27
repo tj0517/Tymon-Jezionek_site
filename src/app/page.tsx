@@ -89,7 +89,7 @@ export default function Home() {
 
       {/* Menu mobilne (dropdown) */}
       {isOpen && (
-        <div className="fixed top-0 left-0 w-full h-[30vh] bg-gray-800  bg-opacity-95 p-6 z-40 flex flex-col space-y-4 text-white text-xl font-light py-[50px]">
+        <div className="fixed top-0 left-0 w-full h-auto bg-gray-800  bg-opacity-95 p-6 z-40 flex flex-col space-y-4 text-white text-xl font-light py-[50px]">
           {menuItems.map(({ label, targetId }, i) => (
             <div
               key={i}

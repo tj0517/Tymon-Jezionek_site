@@ -8,14 +8,14 @@ const opisyStron = [
     opis:
       "Strona dla firmy Sea Cloud oferującej szeroką ofertę usług dla branży offshore. Strona stworzona w kreatorze WebWave – rozbudowana wizytówka z wdrożonym elementem sklepu.",
     obrazek: "/s1.png",
-    link: "https://example.com/sea-clouds",
+    link: "https://seaclouds.eu/",
   },
   {
     tytul: "ASTRAEUS GYM",
     opis:
       "Przykładowa strona siłowni, utrzymana w nowoczesnym stylu trafiającym do wybranej grupy odbiorców. Z wdrożonym systemem kalendarza zajęć oraz formularza kontaktowego.",
     obrazek: "/s2.png",
-    link: "https://example.com/fit-for-you",
+    link: "https://gym-azure-nine.vercel.app",
   },
   // Dodaj więcej obiektów w razie potrzeby
 ];
@@ -46,7 +46,7 @@ export default function Portfolio() {
             id="poppins"
             className="flex flex-col justify-between text-white w-full md:w-[50%]"
           >
-            <div className="text-2xl text-center md: text-left text-4xl font-black">
+            <div className="text-2xl text-center md:text-left md:text-4xl font-black">
               {strona.tytul}
             </div>
             <div className="text-[14px] md:text-[16px] font-light mt-4 md:mt-0">

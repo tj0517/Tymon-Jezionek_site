@@ -10,12 +10,16 @@ const faqs = [
     answer: "Tak, oferujemy możliwość aktualizacji oraz wsparcie techniczne po zakończeniu projektu.",
   },
   {
-    question: "Czy wykonujecie strony w oparciu o WordPress?",
-    answer: "Specjalizujemy się głównie w stronach typu headless (Next.js), ale na życzenie klienta tworzymy też projekty w WordPressie.",
+    question: "Czy pomagacie w zakupie domeny i hostingu?",
+    answer: "Tak, możemy pomóc w doborze, zakupie i konfiguracji domeny oraz hostingu."
   },
   {
-    question: "Czy projekt zawiera SEO?",
-    answer: "Tak optymalizacja pod kątem SEO jest składową każdego projektu.",
+    question: "Czy oferujecie wsparcie po uruchomieniu strony?",
+    answer: "Tak, zapewniamy wsparcie techniczne i możliwość dalszych aktualizacji po wdrożeniu strony."
+  },
+  {
+    question: "Czy strona jest responsywna?",
+    answer: "Tak, każda tworzona przez nas strona jest w pełni responsywna i dostosowuje się do wszystkich rozmiarów ekranów – od smartfonów po monitory desktopowe.",
   },
 ];
 

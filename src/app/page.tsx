@@ -1,4 +1,5 @@
 'use client';
+import Head from "next/head";
 
 import Image from "next/image";
 import FAQ from "./components/faq";
@@ -17,6 +18,7 @@ const menuItems = [
 
 
 export default function Home() {
+  
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -28,16 +30,21 @@ export default function Home() {
     }
   };
 
+  <Head>
+  <link rel="preload" as="image" href="/m1.webp" type="image/webp" />
+</Head>
+
   return (
     <div className="overflow-x-hidden">
       {/* Sekcja główna z tłem */}
       <div className="relative w-full h-[65vh] sm:h-[80vh] md:h-[95vh] overflow-hidden">
-  <Image
-    src="/m1.webp"
-    alt="tło zdjecie"
-    fill
-    className="object-cover opacity-80"
-  />
+      <Image
+      src="/m1.webp"
+      alt="tło zdjecie"
+      fill
+      className="object-cover opacity-80"
+      priority
+      />
   {/* tekst na obrazie */}
   <div
     id="playfair"

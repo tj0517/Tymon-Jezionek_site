@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden">
       {/* Sekcja główna z tłem */}
-      <div className="relative w-full h-[65vh] sm:h-[80vh] md:h-[95vh] overflow-hidden">
+      <div className="relative w-full min-h-[200px] h-[65vh] sm:h-[80vh] md:h-[95vh] overflow-hidden">
       <Image
       src="/m1.webp"
       alt="tło zdjecie"
@@ -55,9 +55,9 @@ export default function Home() {
     </h1>
     <p
       id="poppins"
-      className="mt-6 text-base sm:text-lg md:text-[22px] font-light"
+      className="mt-6 text-base sm:text-lg md:text-[22px] font-light w-1/2 mx-auto"
     >
-      Kompleksowe strony internetowe dla branży sportowej
+      Kompleksowe strony internetowe dla branży sportowej.
     </p>
     <a
       href="#kontakt"

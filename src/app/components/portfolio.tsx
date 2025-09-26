@@ -6,14 +6,14 @@ const opisyStron = [
   {
     tytul: "SEA CLOUDS",
     opis:
-      "Strona dla firmy Sea Cloud oferującej szeroką ofertę usług dla branży offshore. Strona stworzona w kreatorze WebWave – rozbudowana wizytówka z wdrożonym elementem sklepu.",
+      "Strona dla firmy Sea Cloud oferującej szeroką ofertę usług dla branży offshore. Strona oparta na technologi next.js, gwarantującej szybkie ładowanie i responsywność na różnych urządzeniach. Z wdrożonym systemem Obsługi kontaktu mailowego oraz komponentem serwującym artykuły blogowe.",
     obrazek: "/s1.png",
-    link: "https://seaclouds.eu/",
+    link: "https://sea-clouds.eu/",
   },
   {
     tytul: "ASTRAEUS GYM",
     opis:
-      "Przykładowa strona siłowni, utrzymana w nowoczesnym stylu trafiającym do wybranej grupy odbiorców. Z wdrożonym systemem kalendarza zajęć oraz formularza kontaktowego.",
+      "Przykładowa strona siłowni, utrzymana w nowoczesnym stylu trafiającym do wybranej grupy odbiorców. Strona oparta na technologi next.js, jest przykładowym projektem designu jaki moge zaoferować dla klubów z brany sportowej.",
     obrazek: "/s2.png",
     link: "https://gym-azure-nine.vercel.app",
   },

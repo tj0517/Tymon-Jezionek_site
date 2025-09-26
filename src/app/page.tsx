@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden">
       {/* Sekcja główna z tłem */}
-      <div className="relative w-full min-h-[200px] h-[65vh] sm:h-[80vh] md:h-[95vh] overflow-hidden">
+      <div className="relative w-full min-h-[300px] h-[65vh] sm:h-[80vh] md:h-[95vh] overflow-hidden">
       <Image
       src="/m1.webp"
       alt="tło zdjecie"
@@ -48,7 +48,7 @@ export default function Home() {
   {/* tekst na obrazie */}
   <div
     id="playfair"
-    className="absolute  w-full text-center top-[150px] md:top-[175px] font-black text-white px-4"
+    className="absolute  w-full text-center top-[110px] md:top-[175px] font-black text-white px-4"
   >
     <h1 className="text-5xl sm:text-5xl md:text-[100px] leading-tight">
       TYMON<br />JEZIONEK
